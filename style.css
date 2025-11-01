@@ -1,0 +1,242 @@
+/* Transparent Navbar */
+   body{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+   }
+.navbar {
+      background: transparent !important;
+      top: 0;
+      width: 100%;
+      z-index: 10;
+      transition: background-color 0.3s ease;
+    }
+    .navbar .nav-link {
+      color: #fff !important;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+    }
+    .navbar .nav-link:hover {
+      color: #f8f9fa;
+      text-decoration: underline;
+    }
+
+    /* Carousel */
+    .carousel-item {
+      height: 100vh;
+      min-height: 600px;
+      background: no-repeat center center scroll;
+      background-size: cover;
+      position: relative;
+    }
+
+    /* Black overlay */
+    .carousel-item::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 1;
+    }
+
+    .carousel-caption {
+      z-index: 2;
+      bottom: 40%;
+    }
+    .carousel-caption h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+    .carousel-caption p {
+      font-size: 1.2rem;
+    }
+    /* Services */
+    .services {
+      background: #f9f9f9;
+    }
+    .service-box {
+      background: #fff;
+      border-radius: 15px;
+      padding: 40px 20px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+    .service-box:hover {
+      transform: translateY(-10px);
+    }
+/* Make navbar fixed and transparent */
+.navbar {
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Change background on scroll */
+.navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.4) !important;
+}
+
+    /* Footer */
+    footer {
+      background: #111;
+      color: #ccc;
+      padding: 40px 0;
+      text-align: center;
+    }
+
+.carousel-indicators [data-bs-target] {
+      background-color: #ffc107;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: #ffc107;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      background-size: 50%;
+      display: none;
+    }
+    .btn-warning{
+      background-color: #ffc107 !important;
+      color: white !important;
+    }
+.text-warning{
+  color: #ffc107 !important;
+}
+    .carousel-control-prev,
+    .carousel-control-next {
+      width: 5%;
+    }
+
+
+    /* Mobile CSS for Carousel Text */
+@media (max-width: 768px) {
+  .carousel-caption {
+    bottom: 20%;
+    padding: 0 20px;
+  }
+
+  .carousel-caption h1 {
+    font-size: 1.8rem;      /* Smaller headline */
+    line-height: 1.3;
+  }
+
+  .carousel-caption p {
+    font-size: 1rem;        /* Adjusted paragraph text */
+    margin-top: 10px;
+  }
+  .carousel-item{
+    height: 30vh !important;
+    min-height: 250px !important;
+  }
+  .nav-item{
+    margin-left: 15px !important;
+  }
+}
+
+/* Extra small devices (phones under 480px) */
+@media (max-width: 480px) {
+  .carousel-caption {
+    bottom: 15%;
+    text-align: center;
+  }
+
+  .carousel-caption h1 {
+    font-size: 1.4rem;
+  }
+
+  .carousel-caption p {
+    font-size: 0.9rem;
+  }
+  .carousel-item{
+    height: 30vh !important;
+    min-height: 250px !important;
+  }
+  .navbar-collapse.show {
+  background: rgba(0, 0, 0, 0.6);                 /* White background */
+  border-radius: 0 0 10px 10px;     /* Optional rounded bottom corners */
+  padding: 10px 0;
+}
+
+/* Adjust nav link colors inside mobile menu */
+.navbar-collapse.show .nav-link {
+  color: #ffc107!important;   
+  font-weight: 500;        /* Black text for contrast */
+}
+
+/* Optional: make toggler icon visible on white background */
+.navbar-toggler {
+  border-color: rgba(0, 0, 0, 0.6);
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+}
+@media (max-width: 991px) {
+  .navbar.navbar-expand-lg {
+    background: rgba(0, 0, 0, 0.6)!important;
+  }
+}
+/* Fixed Icon */
+/* Fixed icon styling */
+    .fixed-icon {
+      position: fixed;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+      background-color: #ffc107;
+      color: #fff;
+      border-radius: 50%;
+      width: 55px;
+      height: 55px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition:  background-color 0.3s ease;
+      z-index: 9999;
+    }
+
+    .fixed-icon:hover {
+      background-color: #ffc107;
+    }
+
+    /* Modal form styling */
+    .modal-content {
+      border-radius: 12px;
+      padding: 20px;
+    }
+    /* Fixed Icon */
+/* Fixed icon styling */
+    .fixed-icon-1 {
+      position: fixed;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+      background-color:  #075E54;
+      color: #fff;
+      border-radius: 65%;
+      width: 55px;
+      height: 55px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition:  background-color 0.3s ease;
+      z-index: 9999;
+      margin-top: 60px !important;
+    }
+    .bi-whatsapp::before
+{
+  color: white;
+}
+    .fixed-icon-1:hover {
+      background-color:  #075E54;
+    }
