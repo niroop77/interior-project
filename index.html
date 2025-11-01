@@ -9,202 +9,294 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Transparent Navbar -->
-   <!-- Transparent Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolled">
+
+<!-- ===== Navbar ===== -->
+<nav class="navbar navbar-expand-lg fixed-top">
   <div class="container">
-    <!-- Logo and Brand -->
-    <a class="navbar-brand fw-bold text-uppercase" href="#">Interior<span class="text-warning">Studio</span></a>
-    <!-- Collapsible Menu -->
-    <button class="navbar-toggler" type="button" style="background-color: #ffc107 !important;" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand fw-bold text-warning" href="#">Paanya Sri<span class="text-light"> Interiors</span></a>
+    <button class="navbar-toggler text-light border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-      </ul>
 
-      <!-- Contact Button -->
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#">
-            <button class="btn btn-outline-light">Contact</button>
-          </a>
-        </li>
+    <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+      <ul class="navbar-nav text-center">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
       </ul>
     </div>
   </div>
 </nav>
-  <!-- Hero Carousel -->
-  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active" style="background-image: url('Images/slide-1.jpg');">
-        <div class="carousel-caption">
-          <h1 class="text-white">Elegant Living Spaces</h1>
-          <p>We design interiors that reflect your style and personality.</p>
-        </div>
-      </div>
-      <div class="carousel-item" style="background-image: url('Images/slide-2.jpg');">
-        <div class="carousel-caption">
-          <h1 class="text-white">Modern Home Aesthetics</h1>
-          <p>Transform your home with our contemporary design expertise.</p>
-        </div>
-      </div>
-      <div class="carousel-item" style="background-image: url('Images/slide-3.jpg');">
-        <div class="carousel-caption">
-          <h1 class="text-white">Luxury Redefined</h1>
-          <p>Creating spaces that combine comfort, beauty, and functionality.</p>
-        </div>
-      </div>
-    </div>
 
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </button>
-  </div>
+<!-- ===== Hero Carousel ===== -->
+<div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+<div class="carousel-indicators">
+<button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+<button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+<button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+</div>
 
-  <!-- About Section -->
-   <section class="py-5 over-x" id="about">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6">
-          <img src="Images/about us.webp" alt="Team Working" class="img-fluid rounded shadow-sm">
-      </div>
-        <div class="col-lg-6 pt-3">
-         <h3 class="fw-bold section-title">Who are we
-</h3>
-<h2 class="second-heading fw-bold">We propose and discuss design rules</h2>
-<div class="about__para__text">
-                            <p>Metasurfaces are generally designed by placing scatterers in periodic or pseudo-periodic
-                                grids. We propose and discuss design rules for functional metasurfaces with randomly
-                            placed.</p>
-                            <p>Anisotropic elements that randomly sample. Quisque sit amet nisl ante. Fusce lacinia non
-                            tellus id gravida. Cras neque dolor, volutpat et hendrerit et.</p>
-                        </div>
-          <button class="btn btn-warning text-white stretched-link">Learn More</button>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--Our services-->
-  <section id="services" class="services text-center py-5 over-x bg-light">
+<div class="carousel-inner">
+<div class="carousel-item active carousel-item-1" style="background-image: url('Images/slide-1.jpg');">
+<div class="carousel-caption">
+<h1 class="fw-bold text-warning">Elegant Living Spaces</h1>
+<p>Designing your dream interiors with timeless aesthetics.</p>
+<a href="#contact" class="btn btn-warning px-4 mt-3">Get Started</a>
+</div>
+</div>
+
+<div class="carousel-item carousel-item-1" style="background-image: url('Images/slide-2.jpg');">
+<div class="carousel-caption">
+<h1 class="fw-bold text-warning">Luxury Redefined</h1>
+<p>Turning your vision into reality with contemporary elegance.</p>
+<a href="#services" class="btn btn-warning px-4 mt-3">Explore Services</a>
+</div>
+</div>
+
+<div class="carousel-item carousel-item-1" style="background-image: url('Images/slide-3.jpg');">
+<div class="carousel-caption">
+<h1 class="fw-bold text-warning">Spaces That Inspire</h1>
+<p>Experience premium design with functional creativity.</p>
+<a href="#about" class="btn btn-warning px-4 mt-3">Learn More</a>
+</div>
+</div>
+</div>
+</div>
+
+<!-- About Section -->
+<section id="about" class="py-5">
   <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6" data-aos="fade-right">
+        <img src="images/about us.webp" class="img-fluid rounded" alt="About us">
+      </div>
+      <div class="col-lg-6" data-aos="fade-left">
+        <h6 class="section-title">About Us</h6>
+        <h2 class="second-heading mb-3">We Create Stunning Spaces</h2>
+        <p>Our designs blend functionality and beauty to create timeless interiors.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="py-5 bg-light">
+  <div class="container text-center">
+    <h6 class="section-title" data-aos="fade-up">Our Services</h6>
+    <h2 class="second-heading mb-5" data-aos="fade-up" data-aos-delay="200">What We Offer</h2>
     <div class="row g-4">
-       <span class="fw-bold section-title text-center">Our works</span>
-      <!-- Column 1 -->
-      <div class="col-md-6">
-        <div class="image-box position-relative overflow-hidden">
-          <img src="Images/istockphoto-2160552278-612x612.webp" 
-               class="img-fluid w-100 rounded" alt="Interior 1">
-          <div class="overlay d-flex align-items-center justify-content-center">
-            <div class="text-center text-white">
-              <h4 class="fw-bold">Modern Workspace</h4>
-              <p>Creative and minimal design for inspiration.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Column 2 -->
-      <div class="col-md-6">
-        <div class="image-box position-relative overflow-hidden">
-          <img src="Images/resttyren.webp" 
-               class="img-fluid w-100 rounded" alt="Interior 2">
-          <div class="overlay d-flex align-items-center justify-content-center">
-            <div class="text-center text-white">
-              <h4 class="fw-bold">Elegant Dining Area</h4>
-              <p>Refined interiors with soft tones and warm lighting.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Column 3 -->
-      <div class="col-md-6">
-        <div class="image-box position-relative overflow-hidden">
-          <img src="Images/istockphoto-2160552278-612x612.webp" 
-               class="img-fluid w-100 rounded" alt="Interior 1">
-          <div class="overlay d-flex align-items-center justify-content-center">
-            <div class="text-center text-white">
-              <h4 class="fw-bold">Modern Workspace</h4>
-              <p>Creative and minimal design for inspiration.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Column 4 -->
-      <div class="col-md-6">
-        <div class="image-box position-relative overflow-hidden">
-          <img src="Images/resttyren.webp" 
-               class="img-fluid w-100 rounded" alt="Interior 2">
-          <div class="overlay d-flex align-items-center justify-content-center">
-            <div class="text-center text-white">
-              <h4 class="fw-bold">Elegant Dining Area</h4>
-              <p>Refined interiors with soft tones and warm lighting.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-  </section>
-  <!-- Services Section 
-  <section id="services" class="services text-center py-5 over-x">
-    <div class="container">
-      <h2 class="fw-bold mb-5">Our Services</h2>
-      <div class="row g-4">
-        <div class="col-md-6">
-          <div class="service-box">
+      <div class="col-md-6" data-aos="zoom-in">
+        <div class="image-box position-relative">
+          <img src="images/Service-4.png" class="img-fluid rounded" alt="">
+          <div class="overlay">
             <h4>Residential Design</h4>
-            <p>Transform your home into a reflection of your personal taste with our bespoke design services.</p>
+            <p>Beautiful, functional living spaces.</p>
           </div>
         </div>
-        <div class="col-md-6">
-          <div class="service-box">
-            <h4>Commercial Spaces</h4>
-            <p>We create professional, stylish interiors for offices, showrooms, and retail spaces.</p>
+      </div>
+      <div class="col-md-6" data-aos="zoom-in" data-aos-delay="150">
+        <div class="image-box position-relative">
+          <img src="images/Service-3.png" class="img-fluid rounded" alt="">
+          <div class="overlay">
+            <h4>Commercial Design</h4>
+            <p>Elegant interiors for workspaces.</p>
           </div>
         </div>
-        <div class="col-md-6">
-          <div class="service-box">
-            <h4>Renovation Projects</h4>
-            <p>Upgrade and modernize your existing spaces with innovative and sustainable design ideas.</p>
+      </div>
+      <div class="col-md-6" data-aos="zoom-in" data-aos-delay="300">
+        <div class="image-box position-relative">
+          <img src="images/service-2.jpg" class="img-fluid rounded" alt="">
+          <div class="overlay">
+            <h4>Consultation</h4>
+            <p>Expert design advice for your space.</p>
           </div>
         </div>
-        <div class="col-md-6">
-          <div class="service-box">
-            <h4>Renovation Projects</h4>
-            <p>Upgrade and modernize your existing spaces with innovative and sustainable design ideas.</p>
+      </div>
+      <div class="col-md-6" data-aos="zoom-in" data-aos-delay="300">
+        <div class="image-box position-relative">
+          <img src="images/Service-5.png" class="img-fluid rounded" alt="">
+          <div class="overlay">
+            <h4>3D Visualization</h4>
+            <p>Immersive visual renders to preview your dream interiors before build.</p>
           </div>
         </div>
       </div>
     </div>
-  </section>
-  -->
- <!-- Fixed Icon (Bootstrap Icon) -->
-  <div class="fixed-icon" data-bs-toggle="modal" data-bs-target="#popupForm">
-    <i class="bi bi-chat-left-text-fill"></i>    
   </div>
+</section>
+<!--Testmonial-->
+<section class="py-5 bg-white text-center" id="testmonial">
+  <div class="container text-center">
+    <h6 class="section-title" data-aos="fade-up">Testimonials</h6>
+    <h2 class="second-heading mb-5" data-aos="fade-up" data-aos-delay="200">What Our Clients Say</h2>
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators carousel-testmonial-indicator">
+<button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"></button>
+<button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></button>
+</div>
+      <div class="carousel-inner">
 
- <div class="fixed-icon-1 my-5">
-    <a href="https://wa.me/919182831712" target="_blank"><i class="bi bi-whatsapp mt-5"></i></a>
+        <!-- Slide 1 -->
+        <div class="carousel-item active carousel-item-2">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="testimonial-card shadow-sm">
+                <img src="Images/Person-3.png" class="testimonial-img" alt="Client 1">
+                <p>“Fantastic experience! Their creativity and attention to detail exceeded our expectations.”</p>
+                <h6 class="testimonial-name">Emma Johnson</h6>
+                <p class="testimonial-role">CEO, VisionTech</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="testimonial-card shadow-sm">
+                <img src="Images/person-2.jpg" class="testimonial-img" alt="Client 2">
+                <p>“The team transformed our space beautifully. Highly recommend their services!”</p>
+                <h6 class="testimonial-name">David Carter</h6>
+                <p class="testimonial-role">Founder, CreativeHub</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="testimonial-card shadow-sm">
+                <img src="Images/Person-4.png" class="testimonial-img" alt="Client 3">
+                <p>“Amazing work! Delivered on time and within budget — couldn’t be happier.”</p>
+                <h6 class="testimonial-name">Sophia Lee</h6>
+                <p class="testimonial-role">Manager, DecoWorld</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item carousel-item-2">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="testimonial-card">
+                <img src="Images/Person-5.png" class="testimonial-img" alt="Client 4">
+                <p>“Their professionalism and communication were top-notch from start to finish.”</p>
+                <h6 class="testimonial-name">Olivia Brown</h6>
+                <p class="testimonial-role">Architect, BuildPro</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="testimonial-card">
+                <img src="Images/Person-6.png" class="testimonial-img" alt="Client 5">
+                <p>“Superb design sense — gave our office a modern and elegant touch.”</p>
+                <h6 class="testimonial-name">Liam Wilson</h6>
+                <p class="testimonial-role">CTO, ModernSpace</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="testimonial-card">
+                <img src="Images/Person-1.png" class="testimonial-img" alt="Client 6">
+                <p>“Truly passionate designers who understand client needs perfectly.”</p>
+                <h6 class="testimonial-name">Ava Green</h6>
+                <p class="testimonial-role">Director, LuxeInteriors</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Carousel controls -->
+      <div class="d-flex justify-content-center mt-4">
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
   </div>
+</section>
+<!-- ===== Contact ===== -->
+<section id="contact" class="py-5 bg-light text-center">
+  <div class="container">
+    <h6 class="section-title text-uppercase">Let's Connect</h6>
+    <h2 class="second-heading mb-4">Get in Touch</h2>
+    <p class="text-muted mb-5">We’d love to help design your dream space.</p>
 
+    <form class="mx-auto" style="max-width:600px;">
+      <div class="mb-3">
+        <input type="text" class="form-control" placeholder="Your Name" required />
+      </div>
+      <div class="mb-3">
+        <input type="email" class="form-control" placeholder="Your Email" required />
+      </div>
+      <div class="mb-3">
+        <textarea class="form-control" rows="4" placeholder="Message" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-warning px-4">Submit</button>
+    </form>
+  </div>
+</section>
 
-  <!-- Popup Modal Form -->
-  <div class="modal fade" id="popupForm" tabindex="-1" aria-hidden="true">
+<!-- ====== Footer Section ====== -->
+<footer class="footer-section py-5">
+  <div class="container">
+    <div class="row gy-4">
+      <!-- Logo & About -->
+      <div class="col-lg-4 col-md-6">
+        <a class="navbar-brand fw-bold text-warning" href="#">Paanya Sri<span class="text-light"> Interiors</span></a>
+        <p class="footer-about">
+          We create elegant, functional spaces that reflect your lifestyle. From modern homes to creative workspaces, our designs are crafted with precision and passion.
+        </p>
+        <div class="social-icons mt-3">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+          <a href="#"><i class="bi bi-twitter-x"></i></a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-lg-2 col-md-6">
+        <h5 class="footer-title">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div class="col-lg-3 col-md-6">
+        <h5 class="footer-title">Our Services</h5>
+        <ul class="list-unstyled">
+          <li><a href="#">Residential Interiors</a></li>
+          <li><a href="#">Office Spaces</a></li>
+          <li><a href="#">Modular Kitchen</a></li>
+          <li><a href="#">3D Visualization</a></li>
+          <li><a href="#">Renovation & Remodeling</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="col-lg-3 col-md-6">
+        <h5 class="footer-title">Contact Us</h5>
+        <p class="mb-1"><i class="bi bi-geo-alt"></i> Hyderabad, Telangana</p>
+        <p class="mb-1"><i class="bi bi-envelope"></i> info@paanyasriinteriors.com</p>
+        <p><i class="bi bi-phone"></i> +91 9182831712</p>
+      </div>
+    </div>
+
+    <hr class="footer-divider my-4">
+
+    <div class="text-center">
+      <p class="mb-0">© 2025 Paanya Sri Interiors. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== Fixed Icons ===== -->
+<div class="fixed-icon" data-bs-toggle="modal" data-bs-target="#popupForm">
+  <i class="bi bi-envelope fs-4"></i>
+</div>
+<div class="modal fade" id="popupForm" tabindex="-1" aria-hidden="true" style="display: none;">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -231,13 +323,27 @@
       </div>
     </div>
   </div>
-  <!-- Footer -->
-  <footer id="contact">
-    <div class="container">
-      <p>&copy; 2025 Interior Studio. All Rights Reserved.</p> 
-    </div>
-  </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
-</script>   
+<div class="fixed-icon-1 link-unstyled">
+  <a href="https://wa.me/919182831712" target="_blank" class="link-unstyled"><i class="bi bi-whatsapp fs-4"></i></a>
+  
+</div>
+
+<!-- ===== Scripts ===== -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // Change navbar background on scroll
+  window.addEventListener('scroll', function () {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 100) navbar.classList.add('scrolled');
+    else navbar.classList.remove('scrolled');
+  });
+</script>
+<!-- AOS Animation Library -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- AOS Script -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
