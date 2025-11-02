@@ -122,10 +122,9 @@ p {
   border-radius: 30px;
   transition: var(--transition);
 }
-
 .btn-primary:hover {
   background-color: var(--primary-dark);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
   transform: translateY(-2px);
 }
 
