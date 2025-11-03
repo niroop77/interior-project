@@ -65,7 +65,7 @@ p {
 .nav-link {
   color: var(--white) !important;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 1px;
   transition: var(--transition);
 }
